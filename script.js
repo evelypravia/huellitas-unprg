@@ -22,7 +22,7 @@ signupForm?.addEventListener('submit', event => {
 
 // ===== Formulario de registro de donación (sección Donaciones-Insumos) =====
 // Reemplaza FORM_ID_AQUI por el Form ID que te da forminit.com al crear tu cuenta y tu formulario
-const FORMINIT_FORM_ID = 'qp4f6d4u16o';
+const FORMINIT_FORM_ID = 'lkk0x97t1tp';
 const forminit = typeof Forminit !== 'undefined' ? new Forminit() : null;
 
 const donacionForm = document.getElementById('form-donacion');
