@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+:root{
+    --ink:#17201d;
+    --paper:#f4f0e9;
+    --lime:#d6ee56;
+    --orange:#f06937;
+    --lila:#d5d1fa;
+    --line:rgba(23,32,29,.24)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}
+.site-header{height:78px;padding:0 3.2vw;display:flex;
+    align-items:center;border-bottom:1px solid var(--line);
+    gap:40px;position:sticky;top:0;left:0;right:0;z-index:20;
+    background:rgba(244,240,233,.92);backdrop-filter:blur(6px);}
+.brand{font-weight:700;
+        font-size:23px;letter-spacing:-1.4px;color:inherit;text-decoration:none}
+        .brand span{font-size:8px;vertical-align:top;margin-left:2px}.nav{display:flex;gap:27px;margin-left:auto}.nav a,.header-cta,footer a{color:inherit;text-decoration:none;font-size:13px}.header-cta{background:var(--ink);color:var(--paper);padding:11px 16px;margin-left:15px}.header-cta span{margin-left:7px}.menu-button{display:none}.hero{min-height:515px;padding:74px 8.3vw 52px;display:flex;flex-direction:column;background:var(--lime)}.eyebrow,.section-number{font:11px 'DM Mono',monospace;letter-spacing:.04em;margin:0}.hero h1{font-size:clamp(54px,7.6vw,112px);line-height:.91;letter-spacing:-.07em;font-weight:500;margin:54px 0 auto}.hero h1 em{font-family:'Playfair Display',serif;letter-spacing:-.08em}.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:35px}.hero-bottom p{font-size:16px;line-height:1.4;max-width:350px;margin:0}.hero-bottom a{font:12px 'DM Mono',monospace;color:inherit;text-decoration:none;border-bottom:1px solid;padding-bottom:5px}.hero-bottom span{font-size:18px;margin-left:8px}.hero-image{margin:0;position:relative;height:570px;overflow:hidden}.hero-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}figcaption{position:absolute;bottom:19px;right:3vw;background:var(--paper);padding:8px 11px;font:10px 'DM Mono',monospace}.intro{padding:145px 8.3vw;display:grid;grid-template-columns:28% 1fr;gap:20px}.intro h2,.principles h2,.resources h2,.signup h2{font-size:clamp(38px,5.1vw,73px);font-weight:500;line-height:.98;letter-spacing:-.065em;margin:0 0 36px}.intro>div{max-width:790px}.intro p:not(.section-number){font-size:18px;line-height:1.48;max-width:600px}.donation-card{display:grid;gap:24px;margin-top:32px}.donation-card img{width:100%;max-height:420px;object-fit:contain;object-position:center;display:block;border-radius:18px}.donation-content{max-width:720px}.showcase{display:grid;grid-template-columns:1fr 1fr 1fr}.card{padding:26px 2.5vw 31px;min-height:545px;display:flex;flex-direction:column}.card-a{background:#d8ccc2}.card-b{background:#e06a41}.card-c{background:#798f76}.card-image{height:310px;overflow:hidden;margin-bottom:23px}.card-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}.card:hover img{transform:scale(1.05)}.card p,.card span{font:11px 'DM Mono',monospace;margin:0}.card h3{font-size:32px;letter-spacing:-.055em;line-height:.96;font-weight:500;margin:20px 0 auto}.principles{background:var(--ink);color:var(--paper);padding:130px 8.3vw;display:grid;grid-template-columns:43% 1fr;gap:7vw}.principles ol{list-style:none;margin:6px 0 0;padding:0;border-top:1px solid #6f766e}.principles li{display:grid;grid-template-columns:65px 1fr;gap:13px;padding:23px 0;border-bottom:1px solid #6f766e}.principles li>span{font:11px 'DM Mono',monospace;padding-top:6px}.principles h3{font-size:27px;letter-spacing:-.045em;font-weight:500;margin:0}.principles li p{font-size:15px;line-height:1.45;max-width:400px;margin:10px 0 0;color:#c9cec7}.quote{background:var(--orange);padding:130px 7vw;text-align:center}.quote p{font-family:'Playfair Display',serif;font-size:clamp(35px,5.2vw,74px);line-height:1.02;letter-spacing:-.055em;margin:0}.resources{padding:140px 8.3vw}.resources h2{margin-top:44px}.resource-grid{border-top:1px solid var(--ink);display:grid;grid-template-columns:repeat(3,1fr)}.resource-grid a{color:inherit;text-decoration:none;min-height:220px;padding:18px 20px 22px 0;border-right:1px solid var(--ink);display:flex;flex-direction:column}.resource-grid a:not(:first-child){padding-left:20px}.resource-grid span{font:11px 'DM Mono',monospace}.resource-grid strong{font-size:23px;letter-spacing:-.035em;line-height:1.05;font-weight:500;max-width:210px;margin:auto 0}.resource-grid i{font-style:normal;font-size:25px}.signup{padding:110px 8.3vw;background:var(--lila);text-align:center}.signup h2{margin-top:33px}.signup form{margin:0 auto;max-width:570px;display:flex;border-bottom:1px solid var(--ink)}input{appearance:none;background:transparent;border:0;outline:0;padding:16px 0;width:100%;font:16px 'DM Sans',sans-serif;color:var(--ink)}input::placeholder{color:#60635f}button{border:0;background:transparent;font:13px 'DM Sans',sans-serif;cursor:pointer;white-space:nowrap}button span{font-size:17px;margin-left:8px}.form-message{font-size:13px;min-height:20px;margin:13px 0 0}.sr-only{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden}footer{background:var(--ink);color:var(--paper);padding:36px 3.2vw;display:flex;align-items:center;gap:30px}footer p{font-size:12px;margin:0 auto 0 20px;color:#bbc1ba}footer a:last-child{border-bottom:1px solid #bbc1ba;padding-bottom:3px}
+
+/* ===================== DONA POR YAPE (extras) ===================== */
+.principles-tagline{
+    color:var(--orange);
+    font-size:19px;
+    font-weight:500;
+    margin:0 0 30px;
+    max-width:340px;
+}
+.principles-mascota{
+    width:100%;
+    max-width:400px;
+    height:280px;
+    object-fit:cover;
+    border-radius:16px;
+    display:block;
+}
+.donation-cuenta{
+    background:rgba(244,240,233,.06);
+    border:1px solid rgba(244,240,233,.25);
+    border-radius:12px;
+    padding:14px 18px;
+    margin:22px 0 14px;
+}
+.cuenta-nombre{
+    font-size:14px;
+    margin:0 0 6px;
+    color:#c9cec7;
+}
+.cuenta-numero{
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:.02em;
+    color:var(--lime);
+    margin:0;
+}
+.donation-footer-text{
+    font:12px 'DM Mono',monospace;
+    color:#c9cec7;
+    margin-top:10px;
+}
+
+/* ===================== DONACIONES DE INSUMOS ===================== */
+.insumos{padding:140px 8.3vw}
+.insumos-titulo{margin-top:44px}
+.insumos-layout{display:grid;grid-template-columns:1fr 1fr;gap:6vw;margin-top:50px;align-items:start}
+
+.insumos-formulario{background:var(--ink);color:var(--paper);border-radius:22px;padding:40px}
+.insumos-formulario h3{font-size:24px;letter-spacing:-.03em;font-weight:500;margin:0 0 26px}
+.insumos-formulario form{display:flex;flex-direction:column;gap:16px}
+.insumos-formulario label{font:12px 'DM Mono',monospace;letter-spacing:.02em;color:#c9cec7}
+.insumos-formulario input,
+.insumos-formulario select,
+.insumos-formulario textarea{
+    background:rgba(244,240,233,.06);
+    border:1px solid rgba(244,240,233,.3);
+    border-radius:10px;
+    padding:12px 14px;
+    width:100%;
+    font:15px 'DM Sans',sans-serif;
+    color:var(--paper);
+    outline:0;
+}
+.insumos-formulario select{appearance:none}
+.insumos-formulario textarea{resize:vertical;min-height:80px}
+.insumos-formulario input::placeholder,
+.insumos-formulario textarea::placeholder{color:#9aa19b}
+.insumos-formulario button[type="submit"]{
+    background:var(--lime);
+    color:var(--ink);
+    border-radius:30px;
+    padding:14px 20px;
+    font:14px 'DM Sans',sans-serif;
+    font-weight:700;
+    margin-top:8px;
+    cursor:pointer;
+    transition:opacity .2s ease;
+}
+.insumos-formulario button[type="submit"]:hover{opacity:.85}
+.insumos-formulario .form-message{color:var(--lime)}
+
+.insumos-info h3{font-size:24px;letter-spacing:-.03em;font-weight:500;margin:0 0 20px}
+.insumos-categorias{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:26px}
+.categoria-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:16px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.categoria-card img{width:42px;height:42px;object-fit:contain;flex-shrink:0}
+.categoria-card strong{display:block;font-size:14px;letter-spacing:-.01em}
+.categoria-card p{margin:2px 0 0;font-size:13px;line-height:1.3;color:#4a504b}
+
+.acopio-box{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:20px 22px;
+    margin-bottom:26px;
+}
+.acopio-box p{margin:0 0 8px;font-size:14px;line-height:1.4}
+.acopio-link{
+    display:inline-block;
+    margin-top:6px;
+    font:12px 'DM Mono',monospace;
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--ink);
+    padding-bottom:3px;
+}
+
+.insumos-galeria{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.galeria-img{width:100%;height:220px;object-fit:cover;border-radius:16px;display:block}
+
+/* ===================== CONTÁCTANOS ===================== */
+.contacto{padding:120px 8.3vw;background:var(--lila);text-align:center}
+.contacto h2{font-size:clamp(38px,5.1vw,73px);font-weight:500;line-height:.98;letter-spacing:-.065em;margin:14px 0 50px}
+
+.contacto-grid{
+    max-width:760px;
+    margin:0 auto 40px;
+    display:grid;
+    gap:14px;
+}
+.contacto-item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    background:#fff;
+    border-radius:14px;
+    padding:16px 20px;
+    color:var(--ink);
+    text-decoration:none;
+    font-size:16px;
+    transition:transform .2s ease;
+}
+.contacto-item:hover{transform:translateY(-2px)}
+.contacto-item img{width:26px;height:26px;object-fit:contain}
+
+.contacto-social{display:flex;justify-content:center;gap:18px;margin-bottom:30px}
+.contacto-social img{width:34px;height:34px;object-fit:contain}
+
+.contacto-footer-text{font-size:14px;color:#4a504b;max-width:480px;margin:0 auto}
+
+@media(max-width:720px){.site-header{height:65px;padding:0 20px;gap:18px}
+.nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--paper);padding:18px 20px;flex-direction:column;border-bottom:1px solid var(--line)}.nav.is-open{display:flex}.menu-button{display:block;background:none;padding:0;margin-left:auto;font-size:13px}.header-cta{display:none}.hero{min-height:510px;padding:48px 25px 28px}.hero h1{font-size:57px;margin-top:55px}.hero-bottom{display:block}.hero-bottom p{font-size:14px;margin-bottom:24px}.hero-image{height:420px}.intro{padding:82px 25px;display:block}.intro .section-number{margin-bottom:42px}.intro h2,.principles h2,.resources h2,.signup h2{font-size:43px}.intro p:not(.section-number){font-size:16px}.showcase{grid-template-columns:1fr}.card{min-height:430px;padding:22px 25px}.card-image{height:280px}.principles{padding:78px 25px;display:block}.principles-heading{margin-bottom:45px}.principles li{grid-template-columns:43px 1fr}.principles h3{font-size:23px}.quote{padding:80px 20px}.quote p{font-size:39px}.resources{padding:78px 25px}.resource-grid{grid-template-columns:1fr}.resource-grid a,.resource-grid a:not(:first-child){min-height:150px;padding:18px 0;border-right:0;border-bottom:1px solid var(--ink)}.resource-grid strong{margin:auto 0;font-size:22px}.signup{padding:78px 25px}.signup h2{font-size:42px}.signup form{display:block;border:0}input{border-bottom:1px solid var(--ink);text-align:center}.signup button{margin-top:18px;padding:10px}.hero-image figcaption{right:10px;font-size:9px}footer{padding:30px 20px;display:block}footer p{margin:18px 0}footer a:last-child{font-size:12px}
+
+/* Dona por Yape en móvil */
+.principles-mascota{max-width:100%;height:220px;margin-bottom:20px}
+
+/* Insumos y Contacto en móvil */
+.insumos{padding:78px 25px}
+.insumos-layout{grid-template-columns:1fr;gap:40px}
+.insumos-categorias{grid-template-columns:1fr}
+.insumos-galeria{grid-template-columns:1fr}
+.contacto{padding:78px 25px}
+.contacto-grid{grid-template-columns:1fr}
+}

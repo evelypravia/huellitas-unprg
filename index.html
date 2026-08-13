@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sitio web para huellitas unprg">
+    <title>huellitas-unprg</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Huellitas UNPRG, inicio">HUELLITAS UNPRG<span>®</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+      <nav id="nav" class="nav" aria-label="Navegación principal">
+        <a href="#nosotros">Nosotros</a><a href="#donaciones_yape">Donocaciones-Yape</a><a href="#donaciones_insumos">Donaciones-Insumos</a><a href="#contacto">Contactanos</a>
+      </nav>
+      <a class="header-cta" href="#suscripcion">Recibe la guía <span>↗</span></a>
+    </header>
+
+    <main id="inicio">
+
+      <figure class="hero-image"><img src="interfaz-imag.jpeg" alt="Persona trabajando junto a una ventana"><figcaption>Una pequeño aporte puede cambiar la vida de un maigo de 4 patas.</figcaption></figure>
+
+      <section class="intro" id="nosotros">
+        <p class="section-number">01 / LA IDEA</p>
+        <div><h2>SOBRE NOSOTROS</h2><p>Somos una iniciativa de estudiantes de la UNPRG con la participación activa de alumnos de Medicina Veterinaria, dedicados al rescate y cuidado de animales en situación de abandono.</p></div>
+      </section>
+
+      <section class="showcase" aria-label="Tres enfoques para sitios personales">
+        <article class="card card-a"><div class="card-image"><img src="aviso-impor.png"></div><p>01</p><h3>Información<br>importante</h3><span>AVISO</span></article>
+        <article class="card card-b"><div class="card-image"><img src="huellitas-chicos.jpeg"></div><p>02</p><h3>Conoce nuestro<br>equipo</h3><span>EQUIPO</span></article>
+        <article class="card card-c"><div class="card-image"><img src="logo-huellitas.jpeg" alt="Equipo reunido en un estudio"></div><p>03</p><h3>Ayudanos <br>a ayudar</h3><span>LOGO</span></article>
+      </section>
+
+      <section class="principles" id="donaciones_yape">
+        <div class="principles-heading">
+          <p class="section-number">02 / HUELLITASL</p>
+          <h2>Dona por <br>yape.</h2>
+          <p class="principles-tagline">Tu ayuda alimenta esperanzas 🐾</p>
+
+          <!-- Imagen del perrito o gatito: reemplaza con la tuya -->
+          <img src="perritos-rest.jpeg" alt="Perritos rescatados por Huellitas UNPRG" class="principles-mascota">
+        </div>
+
+        <div class="donation-card">
+          <img src="Yape-huellitas.jpeg" alt="Código QR para donar por Yape" />
+          <div class="donation-content">
+            <h3>Apoya a los peluditos</h3>
+            <p>Tu donación por Yape ayuda a cubrir alimento, atención médica y refugio para animales que esperan un hogar.</p>
+            <div class="donation-cuenta">
+              <p class="cuenta-nombre">Cuenta a nombre de: <strong>Randy Cesar Rachumi Lescano</strong></p>
+              <p class="cuenta-numero">957 372 044</p>
+            </div>
+            <p class="donation-footer-text">Escanea el código y apoya a nuestros peluditos.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== DONACIONES DE INSUMOS ===================== -->
+      <section class="insumos" id="donaciones_insumos">
+        <p class="section-number">03 / PARA EMPEZAR</p>
+        <h2 class="insumos-titulo">Donación de insumos<br>y materiales.</h2>
+
+        <div class="insumos-layout">
+
+          <!-- Columna izquierda: formulario -->
+          <div class="insumos-formulario">
+            <h3>📋 Registrar mi donación</h3>
+            <form id="form-donacion" action="https://api.web3forms.com/submit" method="POST">
+              <!-- Reemplaza TU_ACCESS_KEY por tu clave de Web3Forms (gratis en web3forms.com) -->
+              <input type="hidden" name="access_key" value="TU_ACCESS_KEY">
+              <input type="hidden" name="subject" value="Nuevo registro de donación - Huellitas UNPRG">
+
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" required>
+
+              <label for="tipo">Tipo de donación:</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Económica (Yape)">Económica (Yape)</option>
+                <option value="Insumos / Alimento">Insumos / Alimento</option>
+              </select>
+
+              <label for="descripcion">Monto / Descripción de lo donado:</label>
+              <textarea id="descripcion" name="descripcion" rows="3" required></textarea>
+
+              <label for="comprobante">N° de Operación o Foto del Comprobante:</label>
+              <input type="file" id="comprobante" name="comprobante" accept="image/*">
+
+              <button type="submit">Enviar registro</button>
+              <p class="form-message" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <!-- Columna derecha: qué se puede donar -->
+          <div class="insumos-info">
+            <h3>¿Qué puedes donar?</h3>
+            <div class="insumos-categorias">
+              <div class="categoria-card">
+                <img src="insumos-comid.jpeg" alt="Alimento">
+                <div><strong>Alimento</strong><p>Comida balanceada y patés</p></div>
+              </div>
+              <div class="categoria-card">
+                <img src="medicina.jpeg" alt="Salud">
+                <div><strong>Salud</strong><p>Medicamentos y antiparasitarios</p></div>
+              </div>
+              <div class="categoria-card">
+                <img src="abrigo-perrit.jpeg" alt="Abrigo">
+                <div><strong>Abrigo</strong><p>Cama, mantas y colchas limpias</p></div>
+              </div>
+              <div class="categoria-card">
+                <img src="aseo-perrit.jpeg" alt="Aseo">
+                <div><strong>Aseo</strong><p>Lejía, jabón, shampoo y comederos</p></div>
+              </div>
+            </div>
+
+            <div class="acopio-box">
+              <p><strong>📍 Punto de Acopio:</strong></p>
+              <p>Coordinamos la entrega en un punto neutro o en la ciudad universitaria.</p>
+              <a href="https://wa.me/51957372044" target="_blank" class="acopio-link">💬 Coordinar Entrega por WhatsApp</a>
+            </div>
+
+            
+
+        </div>
+      </section>
+
+      <!-- ===================== CONTÁCTANOS ===================== -->
+      <section class="contacto" id="contacto">
+        <p class="eyebrow">ESTAMOS PARA AYUDARTE</p>
+        <h2>Contáctanos</h2>
+
+        <div class="contacto-grid">
+          <a href="https://wa.me/51957372044" target="_blank" class="contacto-item">
+            <img src="WhatsApp.jpeg" alt="WhatsApp">
+            <span>957 372 044</span>
+          </a>
+
+          <a href="https://whatsapp.com/channel/0029VbBPBawLtOj8N4RhYO1Z" target="_blank" class="contacto-item">
+            <img src="grupo-icono.jpeg" alt="Canal de WhatsApp">
+            <span>Sigue el canal Huellitas UNPRG 🐶❤️🐱</span>
+          </a>
+
+          <a href="mailto:randylh2002@gmail.com" class="contacto-item">
+            <img src="correo-icono.jpeg" alt="Correo">
+            <span>randylh2002@gmail.com</span>
+          </a>
+        </div>
+
+
+        <p class="contacto-footer-text">Iniciativa estudiantil de la Universidad Nacional Pedro Ruiz Gallo.</p>
+      </section>
+
+    </main>
+    <footer><a class="brand" href="#inicio">HUELLITAS UNPRG<span>®</span></a><p>© 2026 Huellitas UNPRG. Un pequeño aporte cambia una vida.</p><a href="#inicio">Volver arriba ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
