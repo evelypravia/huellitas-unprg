@@ -21,6 +21,10 @@ signupForm?.addEventListener('submit', event => {
 });
 
 // ===== Formulario de registro de donación (sección Donaciones-Insumos) =====
+// Reemplaza FORM_ID_AQUI por el Form ID que te da forminit.com al crear tu cuenta y tu formulario
+const FORMINIT_FORM_ID = 'qp4f6d4u16o';
+const forminit = typeof Forminit !== 'undefined' ? new Forminit() : null;
+
 const donacionForm = document.getElementById('form-donacion');
 donacionForm?.addEventListener('submit', async event => {
   event.preventDefault();
@@ -32,19 +36,14 @@ donacionForm?.addEventListener('submit', async event => {
 
   try {
     const formData = new FormData(donacionForm);
-    const response = await fetch(donacionForm.action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    });
-    const resultado = await response.json();
+    const { error } = await forminit.submit(FORMINIT_FORM_ID, formData);
 
-    if (response.ok) {
+    if (!error) {
       mensaje.textContent = '¡Gracias! Tu registro de donación fue enviado correctamente.';
       donacionForm.reset();
     } else {
       mensaje.textContent = 'Hubo un problema al enviar el registro. Intenta nuevamente.';
-      console.error(resultado);
+      console.error(error);
     }
   } catch (error) {
     mensaje.textContent = 'No se pudo conectar. Revisa tu internet e intenta de nuevo.';

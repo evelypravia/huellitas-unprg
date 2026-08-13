@@ -20,7 +20,7 @@
 
     <main id="inicio">
 
-      <figure class="hero-image"><img src="interfaz-imag.jpeg" alt="Persona trabajando junto a una ventana"><figcaption>Una pequeño aporte puede cambiar la vida de un amigo de 4 patas.</figcaption></figure>
+      <figure class="hero-image"><img src="interfaz-imag.jpeg" alt="Persona trabajando junto a una ventana"><figcaption>Una pequeño aporte puede cambiar la vida de un maigo de 4 patas.</figcaption></figure>
 
       <section class="intro" id="nosotros">
         <p class="section-number">01 / LA IDEA</p>
@@ -67,26 +67,22 @@
           <!-- Columna izquierda: formulario -->
           <div class="insumos-formulario">
             <h3>📋 Registrar mi donación</h3>
-            <form id="form-donacion" action="https://api.web3forms.com/submit" method="POST">
-              <!-- Reemplaza TU_ACCESS_KEY por tu clave de Web3Forms (gratis en web3forms.com) -->
-              <input type="hidden" name="access_key" value="66372000-f329-45ec-a2b7-46e67aae0e42">
-              <input type="hidden" name="subject" value="Nuevo registro de donación - Huellitas UNPRG">
-
+            <form id="form-donacion">
               <label for="nombre">Nombre completo:</label>
-              <input type="text" id="nombre" name="nombre" required>
+              <input type="text" id="nombre" name="fi-sender-firstName" required>
 
               <label for="tipo">Tipo de donación:</label>
-              <select id="tipo" name="tipo" required>
+              <select id="tipo" name="fi-select-tipo" required>
                 <option value="">Selecciona una opción</option>
                 <option value="Económica (Yape)">Económica (Yape)</option>
                 <option value="Insumos / Alimento">Insumos / Alimento</option>
               </select>
 
               <label for="descripcion">Monto / Descripción de lo donado:</label>
-              <textarea id="descripcion" name="descripcion" rows="3" required></textarea>
+              <textarea id="descripcion" name="fi-text-descripcion" rows="3" required></textarea>
 
               <label for="comprobante">N° de Operación o Foto del Comprobante:</label>
-              <input type="file" id="comprobante" name="comprobante" accept="image/*">
+              <input type="file" id="comprobante" name="fi-file-comprobante" accept="image/*">
 
               <button type="submit">Enviar registro</button>
               <p class="form-message" role="status" aria-live="polite"></p>
@@ -154,6 +150,7 @@
 
     </main>
     <footer><a class="brand" href="#inicio">HUELLITAS UNPRG<span>®</span></a><p>© 2026 Huellitas UNPRG. Un pequeño aporte cambia una vida.</p><a href="#inicio">Volver arriba ↑</a></footer>
+    <script src="https://forminit.com/sdk/v1/forminit.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
